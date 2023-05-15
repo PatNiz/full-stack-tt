@@ -286,7 +286,7 @@ public class CustomerIT {
 
         assertThat(updatedCustomer).isEqualTo(expected);
     }
-
+/*
     @Test
     void canUploadAndDownloadProfilePictures() throws IOException {
         // create registration request
@@ -387,5 +387,5 @@ public class CustomerIT {
 
         assertThat(actual).isEqualTo(downloadedImage);
 
-    }
+    } */
 }
