@@ -158,7 +158,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(id, "Alex", "alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
-        String newEmail = "alexandro@amigoscode.com";
+        String newEmail = "alexandro@niziolekp.com";
 
         CustomerUpdateRequest updateRequest = new CustomerUpdateRequest("Alexandro", newEmail, 23);
 
@@ -208,7 +208,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(id, "Alex", "alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
-        String newEmail = "alexandro@amigoscode.com";
+        String newEmail = "alexandro@niziolekp.com";
 
         CustomerUpdateRequest updateRequest = new CustomerUpdateRequest(null, newEmail, null);
 
@@ -258,7 +258,7 @@ class CustomerServiceTest {
         Customer customer = new Customer(id, "Alex", "alex@gmail.com", "password", 19, Gender.MALE);
         when(customerDao.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
-        String newEmail = "alexandro@amigoscode.com";
+        String newEmail = "alexandro@niziolekp.com";
 
         CustomerUpdateRequest updateRequest = new CustomerUpdateRequest(null, newEmail, null);
 

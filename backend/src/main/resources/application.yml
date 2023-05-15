@@ -14,7 +14,7 @@ aws:
   s3:
     mock: false
     buckets:
-      customer: fs-amigoscode-customer-test
+      customer: fs-niziolekp-customer-test
 
 management:
   endpoints:
