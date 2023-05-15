@@ -5,6 +5,7 @@ services:
     environment:
       POSTGRES_USER: niziolekp
       POSTGRES_PASSWORD: easyToNoChange#@!
+      POSTGRES_HOST_AUTH_METHOD: trust
       PGDATA: /data/postgres
     volumes:
       - db:/data/postgres
