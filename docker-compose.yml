@@ -3,8 +3,8 @@ services:
     container_name: postgres
     image: postgres:14.1
     environment:
-      POSTGRES_USER: nizolekp
-      POSTGRES_PASSWORD: easyToChange#@!
+      POSTGRES_USER: niziolekp
+      POSTGRES_PASSWORD: easyToNoChange#@!
       PGDATA: /data/postgres
     volumes:
       - db:/data/postgres
@@ -12,30 +12,6 @@ services:
       - "5332:5432"
     networks:
       - db
-    restart: unless-stopped
-  niziolekp-api:
-    container_name: niziolekp-api
-    image: niziolekp/niziolekp-api
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/customer
-    ports:
-      - "8088:8080"
-    networks:
-      - db
-    depends_on:
-      - db
-    restart: unless-stopped
-  niziolekp-react:
-    container_name: niziolekp-react
-    image: niziolekp/niziolekp-react
-    build:
-      context: frontend/react
-      args:
-        api_base_url: http://localhost:8088
-    ports:
-      - "3000:5173"
-    depends_on:
-      - niziolekp-api
     restart: unless-stopped
 
 networks:

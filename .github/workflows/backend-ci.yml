@@ -15,7 +15,7 @@ jobs:
         image: postgres:14.1
         env:
           POSTGRES_USER: niziolekp
-          POSTGRES_PASSWORD: easyToChange#@!
+          POSTGRES_PASSWORD: easyToNoChange#@!
           POSTGRES_DB: customer
         ports:
           - 5332:5432

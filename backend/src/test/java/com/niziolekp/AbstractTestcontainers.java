@@ -33,10 +33,10 @@ public abstract class AbstractTestcontainers {
 
     @Container
     protected static final PostgreSQLContainer<?> postgreSQLContainer =
-            new PostgreSQLContainer<>("postgres:latest")
-                    .withDatabaseName("niziolekp-dao-unit-test")
+            new PostgreSQLContainer<>("postgres")
+                    .withDatabaseName("niziolekp_dao_unit_test")
                     .withUsername("niziolekp")
-                    .withPassword("password");
+                    .withPassword("easyToNoChange#@!");
 
     @DynamicPropertySource
     private static void registerDataSourceProperties(

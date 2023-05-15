@@ -43,7 +43,7 @@ jobs:
           REPO=niziolekp-react \
           TAG=${{ steps.build-number.outputs.BUILD_NUMBER }} \
           ../../.ci/build-publish.sh . \
-            --build-arg api_base_url=http://niziolekpapi-env.eba-ymxutmev.eu-west-1.elasticbeanstalk.com:8080
+            --build-arg api_base_url=http://niziolekpapi-env.eba-ymxutmev.eu-west-2.elasticbeanstalk.com:8080
       - name: Send Slack Message
         run: >
           curl -X POST -H 'Content-type: application/json' 
